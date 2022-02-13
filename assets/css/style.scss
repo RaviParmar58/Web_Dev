@@ -1,0 +1,74 @@
+@import 'variables';
+@import 'mixin';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: borer-box;
+	list-style: none;
+	text-decoration: none;
+}
+
+
+
+
+
+/*  ----------  Navbar CSS  ----------  */
+
+.navbar{
+
+	background-color: $black;
+	height: 80px;
+
+	.logo{
+		font-family: $montserrat;
+		font-weight: $fw-600;
+		font-size: $fs-25;
+		color: $white !important;
+
+		&:hover{
+			@include text_gradint;
+		}
+	}
+
+	.navbar-nav li a{
+		font-family: $poppins;
+		color: $white $imp;
+		padding: 0 20px $imp;
+
+		&:hover{
+			@include text_gradint;
+		}
+
+	}
+
+}	
+
+/*  ----------  Hero Section-1 CSS  ----------  */
+
+.hero-section{
+
+	background-color: $black; 
+	height: 90vh;
+	width: 100%;
+
+	h1{
+		@include h1;
+
+		&:hover{
+			color: #131618 $imp;
+			transition: .5s;
+
+
+			span{
+				@include text_gradint;
+			}
+		}
+
+	}
+}
+
+/*  ----------  Hero Section-2 CSS  ----------  */

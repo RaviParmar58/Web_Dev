@@ -1,0 +1,14 @@
+@mixin h1{
+	font-family: $montserrat;
+	color: #212529;
+	font-size: 70px;
+	font-weight: $fw-600;
+}
+
+@mixin text_gradint{
+	background: $primary-gradint;
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	transition:5s;
+  	font-weight: $fw-600;
+}
