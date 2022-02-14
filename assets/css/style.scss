@@ -12,7 +12,9 @@
 	text-decoration: none;
 }
 
-
+.section{
+	padding: 150px 0;
+}
 
 
 
@@ -52,8 +54,7 @@
 .hero-section{
 
 	background-color: $black; 
-	height: 90vh;
-	width: 100%;
+	height: 650px;
 
 	h1{
 		@include h1;
@@ -71,4 +72,40 @@
 	}
 }
 
-/*  ----------  Hero Section-2 CSS  ----------  */
+/*  ----------  About-Us Section-2 CSS  ----------  */
+
+
+.about-us{
+
+	h2{
+		@include h2;
+	}
+
+	p{
+		font-size: 28px;
+	}
+}
+
+
+/*  ----------  Services Section-3 CSS  ----------  */
+
+.services{
+
+	background-color: $gray-bg-color;
+
+	h2{
+		@include h2;
+		text-align: center;
+		transition: .5s;
+
+		&:hover{
+			color: #d7d7d7;
+			transition: .5s;
+
+			span{
+				@include text_gradint;
+				transition: .5s;
+			}
+		}
+	}
+}

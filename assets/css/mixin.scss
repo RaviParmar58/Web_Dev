@@ -1,7 +1,21 @@
 @mixin h1{
 	font-family: $montserrat;
 	color: #212529;
-	font-size: 70px;
+	font-size: $h1;
+	font-weight: $fw-600;
+}
+
+@mixin h2{
+	font-family: $montserrat;
+	color: $black;
+	font-size: $h2;
+	font-weight: $fw-600;
+}
+
+@mixin p{
+	font-family: $poppins;
+	color: $black;
+	font-size: $p;
 	font-weight: $fw-600;
 }
 
@@ -9,6 +23,7 @@
 	background: $primary-gradint;
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
-  	transition:5s;
-  	font-weight: $fw-600;
+  	transition: 5s;
+  	font-weight: $fw-600;	
 }
+
