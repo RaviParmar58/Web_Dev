@@ -89,6 +89,7 @@
 
 /*  ----------  Services Section-3 CSS  ----------  */
 
+
 .services{
 
 	background-color: $gray-bg-color;
@@ -108,4 +109,21 @@
 			}
 		}
 	}
+
+	h3{
+		@include h3;
+		padding: $p-20 0 $p-10 0;  
+	}
+
+	img{
+		height: 150px;
+		transition: .5s;
+
+		&:hover{
+			transform: translateY(-15px);
+			transition: .5s;
+		}
+	}
 }
+
+

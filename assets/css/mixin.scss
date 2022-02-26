@@ -12,11 +12,21 @@
 	font-weight: $fw-600;
 }
 
+@mixin h3{
+	font-family: $poppins;
+	color: $black;
+	font-size: $h3;
+}
+
 @mixin p{
 	font-family: $poppins;
 	color: $black;
 	font-size: $p;
 	font-weight: $fw-600;
+}
+
+@mixin span{
+	font-family: $poppins;
 }
 
 @mixin text_gradint{
